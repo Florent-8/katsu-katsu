@@ -1,4 +1,4 @@
-name = "katsu-katsu-site"
+name = "katsu-katsu"
 compatibility_date = "2026-03-26"
 
 # Lets Cloudflare Pages / Wrangler know the static output lives in the repo root.
