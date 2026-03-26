@@ -1,61 +1,116 @@
 <!doctype html>
 
-<html lang="en" class="scroll-smooth">
+<html class="light" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Order Delivery | KATSU KATSU NYC</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#3b0900",
+              "tertiary-container": "#647c53",
+              "on-tertiary-fixed": "#0d2003",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#ffb5a1",
+              background: "#fbfaee",
+              "on-secondary-container": "#636262",
+              "secondary-container": "#e2dfde",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#79301b",
+              "secondary-fixed": "#e5e2e1",
+              "tertiary-fixed-dim": "#b4cfa0",
+              "on-primary": "#ffffff",
+              secondary: "#5f5e5e",
+              "surface-tint": "#974730",
+              "primary-container": "#b35c44",
+              "tertiary-fixed": "#d0ebba",
+              "inverse-surface": "#303129",
+              "on-secondary-fixed-variant": "#474746",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fbfaee",
+              "secondary-fixed-dim": "#c8c6c5",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#55433e",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#374d29",
+              primary: "#94442e",
+              surface: "#fbfaee",
+              "surface-container-high": "#e9e9dd",
+              "on-surface": "#1b1c15",
+              "on-background": "#1b1c15",
+              "inverse-on-surface": "#f2f1e5",
+              tertiary: "#4c633d",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-tertiary-container": "#fbfff1",
+              "inverse-primary": "#ffb5a1",
+              "surface-container": "#efeee3",
+              "on-primary-container": "#fffcff",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#dbc1ba",
+              error: "#ba1a1a",
+              "surface-variant": "#e4e3d7",
+              "surface-dim": "#dbdbcf",
+              outline: "#88726d",
+              "surface-container-low": "#f5f4e8",
+              "primary-fixed": "#ffdbd1",
+              "surface-container-highest": "#e4e3d7",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
     <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      .font-headline {
-        font-family: "Noto Serif", serif;
+      html {
+        scroll-behavior: smooth;
       }
     </style>
   </head>
-  <body class="min-h-screen bg-[#1b1c15] text-[#fbfaee]">
-    <main class="min-h-screen flex items-center justify-center px-6 py-12">
-      <div
-        class="max-w-2xl w-full border border-white/10 bg-[#25261f] p-8 md:p-12 shadow-2xl"
-      >
+  <body class="bg-surface text-on-surface">
+    <main class="min-h-screen flex items-center justify-center px-8 py-12">
+      <div class="max-w-2xl w-full p-8 md:p-12">
         <p
-          class="text-[#ffb5a1] font-semibold tracking-[0.25em] uppercase text-xs mb-3"
+          class="font-label text-xs uppercase tracking-[0.3em] text-outline block mb-6"
         >
           KATSU KATSU NYC
         </p>
-        <h1
-          class="font-headline text-4xl md:text-5xl tracking-tight mb-4 leading-tight"
-        >
-          Order delivery now
+        <h1 class="font-headline text-5xl md:text-6xl leading-tight mb-4">
+          Order now
         </h1>
-        <p class="text-[#f2f1e5]/80 text-lg mb-8">
-          Same simple ordering flow as Coba: choose DoorDash, Uber Eats, or
-          call for pickup.
+        <p class="text-on-surface/70 text-lg mb-8 max-w-md leading-relaxed">
+          Choose your favorite delivery platform or call us directly to place
+          your order.
         </p>
 
-        <div class="grid gap-3 mb-8">
+        <div class="flex flex-col gap-3 mb-8">
           <a
-            class="px-6 py-4 bg-[#FF3008] hover:bg-[#e42b07] text-white font-black tracking-wide text-center transition-colors"
+            class="bg-primary px-6 py-4 text-on-primary font-label text-xs uppercase tracking-widest text-center transition-colors active:scale-95 duration-200"
             href="https://www.doordash.com/store/katsu-katsu-new-york-31289567/"
             rel="noopener noreferrer"
             target="_blank"
             >Order on DoorDash</a
           >
           <a
-            class="px-6 py-4 bg-[#06C167] hover:bg-[#05ab5b] text-black font-black tracking-wide text-center transition-colors"
+            class="bg-primary px-6 py-4 text-on-primary font-label text-xs uppercase tracking-widest text-center transition-colors active:scale-95 duration-200"
             href="https://www.ubereats.com/"
             rel="noopener noreferrer"
             target="_blank"
             >Order on Uber Eats</a
           >
           <a
-            class="px-6 py-4 bg-[#303129] hover:bg-[#3a3b33] text-[#fbfaee] font-bold text-center transition-colors"
+            class="border border-outline/30 px-6 py-4 text-on-surface font-label text-xs uppercase tracking-widest text-center transition-colors hover:border-primary hover:text-primary"
             href="tel:+16463704036"
             >Call to Order: (646) 370-4036</a
           >
@@ -63,14 +118,14 @@
 
         <div class="flex flex-col sm:flex-row gap-3">
           <a
-            class="px-6 py-3 border border-white/25 hover:border-white/50 font-bold text-center transition-colors"
+            class="border border-outline/30 px-8 py-3 text-on-surface font-label text-xs uppercase tracking-widest text-center transition-colors hover:border-primary hover:text-primary"
             href="code.html"
             >Back to Home</a
           >
           <a
-            class="px-6 py-3 border border-[#94442e] bg-[#94442e] text-white hover:bg-[#b35c44] font-bold text-center transition-colors"
+            class="bg-primary px-8 py-3 text-on-primary font-label text-xs uppercase tracking-widest text-center transition-colors active:scale-95 duration-200"
             href="code.html#menu"
-            >View Menu First</a
+            >View Menu</a
           >
         </div>
       </div>
