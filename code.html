@@ -1,0 +1,1277 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KATSU KATSU NYC | Homemade Curry &amp; Crispy Katsu</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="favicon-contrast.png"
+    />
+    <link rel="shortcut icon" href="favicon-contrast.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#3b0900",
+              "tertiary-container": "#647c53",
+              "on-tertiary-fixed": "#0d2003",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#ffb5a1",
+              background: "#fbfaee",
+              "on-secondary-container": "#636262",
+              "secondary-container": "#e2dfde",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#79301b",
+              "secondary-fixed": "#e5e2e1",
+              "tertiary-fixed-dim": "#b4cfa0",
+              "on-primary": "#ffffff",
+              secondary: "#5f5e5e",
+              "surface-tint": "#974730",
+              "primary-container": "#b35c44",
+              "tertiary-fixed": "#d0ebba",
+              "inverse-surface": "#303129",
+              "on-secondary-fixed-variant": "#474746",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fbfaee",
+              "secondary-fixed-dim": "#c8c6c5",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#55433e",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#374d29",
+              primary: "#94442e",
+              surface: "#fbfaee",
+              "surface-container-high": "#e9e9dd",
+              "on-surface": "#1b1c15",
+              "on-background": "#1b1c15",
+              "inverse-on-surface": "#f2f1e5",
+              tertiary: "#4c633d",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-tertiary-container": "#fbfff1",
+              "inverse-primary": "#ffb5a1",
+              "surface-container": "#efeee3",
+              "on-primary-container": "#fffcff",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#dbc1ba",
+              error: "#ba1a1a",
+              "surface-variant": "#e4e3d7",
+              "surface-dim": "#dbdbcf",
+              outline: "#88726d",
+              "surface-container-low": "#f5f4e8",
+              "primary-fixed": "#ffdbd1",
+              "surface-container-highest": "#e4e3d7",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0px",
+              lg: "0px",
+              xl: "0px",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 112px;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 200,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      body {
+        background-color: #fbfaee;
+        color: #1b1c15;
+        font-family: "Inter", sans-serif;
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes reviewsMarquee {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-reviews-marquee {
+        animation: reviewsMarquee 36s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="antialiased overflow-x-hidden">
+    <!-- Top Navigation Bar -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-6 max-w-none bg-[#FBFAEE]/85 backdrop-blur-md dark:bg-[#1A1A1A]/85 transition-all duration-300"
+    >
+      <a
+        class="inline-flex items-center gap-3 font-['Noto_Serif'] text-xl font-bold tracking-[0.2em] text-[#1A1A1A] dark:text-[#FBFAEE] hover:opacity-85 transition-opacity duration-300"
+        href="code.html"
+      >
+        <img
+          alt="Katsu Katsu logo"
+          class="h-8 w-8 object-contain"
+          src="nobg-logo.png"
+        />
+        <span>KATSU KATSU NYC</span>
+      </a>
+      <div
+        class="hidden md:flex gap-12 items-center font-['Noto_Serif'] antialiased tracking-tight text-sm uppercase"
+      >
+        <a
+          class="text-[#94442E] dark:text-[#B35C44] border-b-2 border-[#94442E] pb-1 hover:opacity-100 transition-opacity duration-300"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="text-[#1B1C15] dark:text-[#EFEEE3] opacity-70 hover:opacity-100 transition-opacity duration-300"
+          href="#philosophy"
+          >Philosophy</a
+        >
+        <a
+          class="text-[#1B1C15] dark:text-[#EFEEE3] opacity-70 hover:opacity-100 transition-opacity duration-300"
+          href="#menu"
+          >Menu</a
+        >
+        <a
+          class="text-[#1B1C15] dark:text-[#EFEEE3] opacity-70 hover:opacity-100 transition-opacity duration-300"
+          href="#location"
+          >Location</a
+        >
+      </div>
+      <button
+        id="mobile-menu-toggle"
+        aria-label="Open navigation menu"
+        class="md:hidden w-11 h-11 border border-outline/30 flex items-center justify-center"
+        type="button"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a
+        class="hidden md:block bg-primary px-8 py-3 text-on-primary font-label text-xs uppercase tracking-widest active:scale-95 duration-200"
+        href="online-orders.html"
+        >Order Now</a
+      >
+    </nav>
+    <div
+      id="mobile-menu"
+      class="hidden fixed top-[88px] left-0 w-full z-40 bg-[#FBFAEE]/95 backdrop-blur-md border-t border-outline/10 px-8 py-6 md:hidden"
+    >
+      <div
+        class="flex flex-col gap-5 font-['Noto_Serif'] uppercase text-sm tracking-tight"
+      >
+        <a class="text-[#1B1C15]" href="#home">Home</a>
+        <a class="text-[#1B1C15]" href="#philosophy">Philosophy</a>
+        <a class="text-[#1B1C15]" href="#menu">Menu</a>
+        <a class="text-[#1B1C15]" href="#location">Location</a>
+        <a
+          class="bg-primary px-6 py-3 text-on-primary font-label text-xs uppercase tracking-widest text-center mt-2"
+          href="online-orders.html"
+          >Order Now</a
+        >
+      </div>
+    </div>
+    <main id="home">
+      <!-- Hero Section -->
+      <section class="min-h-screen flex flex-col pt-36 pb-16 px-8 bg-surface">
+        <div
+          class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center"
+        >
+          <div class="lg:col-span-5 text-left">
+            <span
+              class="font-label text-xs uppercase tracking-[0.3em] text-outline block mb-6"
+              >ESTABLISHED IN MANHATTAN</span
+            >
+            <h1
+              class="font-headline text-5xl md:text-7xl lg:text-8xl font-light tracking-tighter leading-[0.95]"
+            >
+              Crispy Katsu,<br />
+              Slow Curry,<br />
+              <span class="italic text-primary">Tokyo Soul in NYC.</span>
+            </h1>
+            <p
+              class="mt-8 max-w-md text-sm md:text-base text-on-surface/70 leading-relaxed"
+            >
+              Crafted daily from scratch, plated with precision, and served with
+              the warm spirit of Japanese home cooking.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a
+                class="bg-primary px-8 py-3 text-on-primary font-label text-xs uppercase tracking-widest active:scale-95 duration-200"
+                href="online-orders.html"
+                >Order Now</a
+              >
+              <a
+                class="border border-outline/30 px-8 py-3 text-on-surface font-label text-xs uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
+                href="#menu"
+                >Explore Menu</a
+              >
+            </div>
+          </div>
+          <div class="lg:col-span-7 relative lg:pl-4">
+            <div
+              class="aspect-[16/10] md:aspect-[16/9] overflow-hidden bg-surface-container"
+            >
+              <img
+                alt="Hero Katsu"
+                class="w-full h-full object-cover"
+                src="hero-katsu.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Story / Editorial Section -->
+      <section
+        class="py-12 px-8 bg-surface-container-low scroll-mt-36"
+        id="philosophy"
+      >
+        <div class="max-w-7xl mx-auto editorial-grid">
+          <div class="col-span-12 md:col-span-5 flex flex-col justify-center">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="h-px w-12 bg-outline/30"></div>
+              <span
+                class="font-label text-xs uppercase tracking-widest text-outline"
+                >Our Heritage</span
+              >
+            </div>
+            <h2 class="font-headline text-xl md:text-2xl mb-5 leading-tight">
+              A taste of home.
+            </h2>
+            <p
+              class="font-body text-xs md:text-sm leading-relaxed text-on-surface/80 mb-6"
+            >
+              Chef Kelly Cho crafts every curry from scratch, drawing on
+              Japanese tradition and family recipes passed down for generations.
+              At Katsu Katsu, we believe in the patient art of the slow-simmer
+              and the perfect golden crunch.
+            </p>
+            <div class="flex gap-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center border border-outline/20"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >restaurant</span
+                >
+              </div>
+              <p
+                class="text-sm font-label uppercase tracking-widest self-center text-on-surface"
+              >
+                Chef-Driven Philosophy
+              </p>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-6 md:col-start-7">
+            <div
+              class="relative aspect-[4/3.3] md:aspect-[4/3.5] bg-surface-container overflow-hidden"
+            >
+              <img
+                alt="Chef Kelly Cho's kitchen atmosphere"
+                class="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]"
+                data-alt="Softly lit atmospheric shot of a modern Japanese restaurant kitchen with steam rising and wooden textures in downtown New York"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlkSRhZy4Ys-Ds9CukYP8jA7YTpcYzcJulsn4Hd4v2wgmyYfmSapuyirGFiqQajnOVs-onx1AhlDQDXCjwZPiuM_IHQIkhJesLeK3Tvy-XLrIBD6SXTi7i75u5WgOy5kzIsO9j5yHwdbuHcUCGCwwdhkqKiNFfvLnpzvxl6EVSuSdQNuIz7FiQC4IK39FivOD-tbU7pj65RLVE7jacX5luxSSfAw1iw84WdiZtxndNJTygjc-FYIukaoGlKtfWdMHd_09LEIFUwlwP"
+              />
+              <div
+                class="absolute bottom-4 left-4 bg-primary px-4 py-3 hidden md:block"
+              >
+                <span class="text-on-primary font-headline text-xl italic"
+                  >Kokoro</span
+                >
+                <p
+                  class="text-on-primary/80 font-label text-[10px] uppercase tracking-widest mt-2"
+                >
+                  Cooking from the heart
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Menu Section -->
+      <section class="py-32 px-8 bg-surface scroll-mt-36" id="menu">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <span
+                class="font-label text-xs uppercase tracking-widest text-outline block mb-4"
+                >Real Menu</span
+              >
+              <h2 class="font-headline text-5xl">Katsu Katsu Menu</h2>
+            </div>
+            <div
+              class="hidden md:block h-px flex-1 mx-12 bg-outline/20 mb-4"
+            ></div>
+          </div>
+          <div
+            id="menu-carousel"
+            class="overflow-hidden cursor-grab active:cursor-grabbing"
+          >
+            <div
+              id="menu-track"
+              class="flex transition-transform duration-[1200ms] ease-in-out"
+            >
+              <div class="w-full sm:w-1/2 lg:w-1/4 shrink-0 pr-4">
+                <div
+                  class="bg-surface-container-low group h-full border border-outline/10 flex flex-col"
+                >
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img
+                      alt="Chicken Katsu Curry"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      src="a-high-resolution--professional-food-photography-s (1).png"
+                    />
+                  </div>
+                  <div class="p-8 border-t border-outline/10 flex-1">
+                    <div class="flex justify-between items-baseline mb-4 gap-4">
+                      <h3 class="font-headline text-xl">Chicken Katsu Curry</h3>
+                      <span class="text-sm font-body text-outline">$17.99</span>
+                    </div>
+                    <p
+                      class="font-body text-sm text-on-surface/70 leading-relaxed"
+                    >
+                      Crispy chicken cutlet with house curry, rice, cabbage
+                      salad, pickles, and miso soup.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 lg:w-1/4 shrink-0 pr-4">
+                <div
+                  class="bg-surface-container-low group h-full border border-outline/10 flex flex-col"
+                >
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img
+                      alt="Pork Katsu Curry"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      src="hero-katsu.png"
+                    />
+                  </div>
+                  <div class="p-8 border-t border-outline/10 flex-1">
+                    <div class="flex justify-between items-baseline mb-4 gap-4">
+                      <h3 class="font-headline text-xl">Pork Katsu Curry</h3>
+                      <span class="text-sm font-body text-outline">$17.99</span>
+                    </div>
+                    <p
+                      class="font-body text-sm text-on-surface/70 leading-relaxed"
+                    >
+                      Classic pork cutlet with rich curry, steamed rice, salad,
+                      pickles, and miso soup.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 lg:w-1/4 shrink-0 pr-4">
+                <div
+                  class="bg-surface-container-low group h-full border border-outline/10 flex flex-col"
+                >
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img
+                      alt="King Salmon Bowl"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAnlyelmLJWf2F3dtr-7pa8s3xshTvLpwEUsF3uEmL9HMNJsAdLtZPXcK0FUu7tcUlrx6ydnrlWJOuH9w1Aj1gy7tYIY_1GXPBHwDacP0jHyHLer-Re5TWumpzOIRp4e0WxIZOoBVo-avoAGgmts_D9J7K511WH1_NYwzBLoietYu7QIr4A4rerL6ycUArW5-7Q1RkOazzQUZALzaeo9obpoj00UhP2M-rq_VVbH9IMUskrOBCJtTqbiguj3cGz2wlqUbvj4iJqd2Y"
+                    />
+                  </div>
+                  <div class="p-8 border-t border-outline/10 flex-1">
+                    <div class="flex justify-between items-baseline mb-4 gap-4">
+                      <h3 class="font-headline text-xl">King Salmon Bowl</h3>
+                      <span class="text-sm font-body text-outline">$16.99</span>
+                    </div>
+                    <p
+                      class="font-body text-sm text-on-surface/70 leading-relaxed"
+                    >
+                      Buttery diced salmon with corn, cucumber, seaweed salad,
+                      kale, nori, edamame, crab meat, and spicy mayo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 lg:w-1/4 shrink-0 pr-4">
+                <div
+                  class="bg-surface-container-low group h-full border border-outline/10 flex flex-col"
+                >
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img
+                      alt="Bluefin Tuna Bowl"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBZieXpSO6RgFa-NqwVtwinjrHNUrlfqmBAz_2De2csXYsgO7clRSZWH5JKogyCvTHd9rWFe6agP6z44zz6x5oqEUsnaQU5Efem5IRfgjFTq6n9hPbio6pQtXgIweqsozyzmnQjeocrN3oGvckK3wn8tlUNVhZflOr-FXB86MMa4lInSgajlsSw0bTb3SqP-we7ggJBDZuyQOZyXfVWf2MlDvEYsn8685Zf9eDoX4KEPJJwyyh1xGadDCAIcrUk_rDRVoVZET3keZV"
+                    />
+                  </div>
+                  <div class="p-8 border-t border-outline/10 flex-1">
+                    <div class="flex justify-between items-baseline mb-4 gap-4">
+                      <h3 class="font-headline text-xl">Bluefin Tuna Bowl</h3>
+                      <span class="text-sm font-body text-outline">$17.99</span>
+                    </div>
+                    <p
+                      class="font-body text-sm text-on-surface/70 leading-relaxed"
+                    >
+                      AAA diced tuna with corn, cucumber, seaweed salad, cabbage
+                      and kale, nori, crispy onion, sesame seeds, and house poke
+                      sauce.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 lg:w-1/4 shrink-0">
+                <div
+                  class="bg-surface-container-low group h-full border border-outline/10 flex flex-col"
+                >
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img
+                      alt="Chef Special Katsu Plate"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      src="images.jpg"
+                    />
+                  </div>
+                  <div class="p-8 border-t border-outline/10 flex-1">
+                    <div class="flex justify-between items-baseline mb-4 gap-4">
+                      <h3 class="font-headline text-xl">Chef Special Plate</h3>
+                      <span class="text-sm font-body text-outline">$18.99</span>
+                    </div>
+                    <p
+                      class="font-body text-sm text-on-surface/70 leading-relaxed"
+                    >
+                      A rotating featured katsu set with seasonal sides and a
+                      richer curry finish.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-8 flex flex-col items-center gap-4 text-center text-on-surface/60"
+          >
+            <div class="flex items-center gap-4">
+              <button
+                id="menu-prev-bottom"
+                aria-label="Previous featured dish"
+                class="w-12 h-12 border border-outline/30 hover:border-primary hover:text-primary transition-colors flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >arrow_back</span
+                >
+              </button>
+              <button
+                id="menu-next-bottom"
+                aria-label="Next featured dish"
+                class="w-12 h-12 border border-outline/30 hover:border-primary hover:text-primary transition-colors flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-lg"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+            <p class="font-body text-sm">
+              Use the arrows or swipe to browse the featured dishes.
+            </p>
+          </div>
+          <div class="mt-10 flex justify-center">
+            <a
+              class="bg-primary px-8 py-3 text-on-primary font-label text-xs uppercase tracking-widest active:scale-95 duration-200"
+              href="full-menu.html"
+              role="button"
+              >See Full Menu</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-20 px-8 border-y border-outline/10 bg-surface-container-low"
+      >
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 gap-8 lg:grid-cols-[1.15fr_0.85fr] items-center"
+        >
+          <div
+            id="menu-carousel"
+            class="overflow-hidden cursor-grab active:cursor-grabbing select-none touch-pan-y"
+          >
+            <h2 class="font-headline text-4xl md:text-5xl leading-tight">
+              Delivery and pickup, kept simple.
+            </h2>
+            <p
+              class="mt-5 max-w-2xl text-base text-on-surface/70 leading-relaxed"
+            >
+              Open DoorDash, Uber Eats, or call the restaurant directly for
+              pickup.
+            </p>
+          </div>
+          <div class="grid gap-4">
+            <a
+              class="flex items-center justify-between gap-4 border border-[#FF3008]/30 bg-[#FF3008] px-6 py-5 text-white transition-transform hover:-translate-y-1"
+              href="https://www.doordash.com/store/katsu-katsu-new-york-31289567/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div>
+                <p class="font-headline text-2xl">DoorDash</p>
+                <p class="mt-1 text-sm text-white/85">
+                  Open the live Katsu Katsu delivery menu
+                </p>
+              </div>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a
+              class="flex items-center justify-between gap-4 border border-[#06C167]/30 bg-[#06C167] px-6 py-5 text-black transition-transform hover:-translate-y-1"
+              href="https://www.ubereats.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div>
+                <p class="font-headline text-2xl">Uber Eats</p>
+                <p class="mt-1 text-sm text-black/75">
+                  Search Katsu Katsu from the same order hub
+                </p>
+              </div>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            <a
+              class="flex items-center justify-between gap-4 border border-outline/20 bg-surface px-6 py-5 text-on-surface transition-colors hover:border-primary"
+              href="tel:+16463704036"
+            >
+              <div>
+                <p class="font-headline text-2xl">Call for Pickup</p>
+                <p class="mt-1 text-sm text-on-surface/70">(646) 370-4036</p>
+              </div>
+              <span class="material-symbols-outlined text-primary">call</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Why Katsu Katsu / Feature Row -->
+      <section class="py-24 px-8 border-y border-outline/10">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div class="flex flex-col items-center text-center">
+              <span class="material-symbols-outlined text-primary text-3xl mb-4"
+                >skillet</span
+              >
+              <h4
+                class="font-label text-[10px] uppercase tracking-[0.2em] font-semibold text-on-surface"
+              >
+                Curry Made from Scratch
+              </h4>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span
+                class="material-symbols-outlined text-tertiary text-3xl mb-4"
+                >eco</span
+              >
+              <h4
+                class="font-label text-[10px] uppercase tracking-[0.2em] font-semibold text-on-surface"
+              >
+                Vegetarian Options Available
+              </h4>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="material-symbols-outlined text-outline text-3xl mb-4"
+                >location_on</span
+              >
+              <h4
+                class="font-label text-[10px] uppercase tracking-[0.2em] font-semibold text-on-surface"
+              >
+                100 Pearl St, Downtown NYC
+              </h4>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="material-symbols-outlined text-outline text-3xl mb-4"
+                >schedule</span
+              >
+              <h4
+                class="font-label text-[10px] uppercase tracking-[0.2em] font-semibold text-on-surface"
+              >
+                Mon–Fri, 11am–3pm
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section
+        class="py-24 px-8 bg-surface-container-low scroll-mt-36"
+        id="location"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div>
+            <span
+              class="font-label text-xs uppercase tracking-widest text-outline block mb-4"
+              >Find Us</span
+            >
+            <h2 class="font-headline text-4xl md:text-5xl mb-10">
+              Location &amp; Hours
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 items-stretch"
+          >
+            <div
+              class="border border-outline/20 overflow-hidden min-h-[430px] bg-surface"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96711.89416393828!2d-73.98008949999999!3d40.7565986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25972fe770389%3A0x5271a0c2597e635f!2sKatsu%20Katsu!5e0!3m2!1sen!2sfr!4v1774547428086!5m2!1sen!2sfr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full min-h-[430px]"
+              ></iframe>
+            </div>
+            <div
+              class="bg-surface p-8 border border-outline/10 min-h-[430px] flex flex-col"
+            >
+              <h3 class="font-headline text-2xl mb-3">Working Hours</h3>
+              <p class="font-body text-sm text-on-surface/60 mb-6">
+                Katsu Katsu, New York, NY
+              </p>
+              <ul class="space-y-3 font-body text-sm text-on-surface/80 flex-1">
+                <li
+                  class="flex justify-between border-b border-outline/10 pb-2"
+                >
+                  <span>Thursday</span><span>11am–8pm</span>
+                </li>
+                <li
+                  class="flex justify-between border-b border-outline/10 pb-2"
+                >
+                  <span>Friday</span><span>11am–8pm</span>
+                </li>
+                <li
+                  class="flex justify-between border-b border-outline/10 pb-2"
+                >
+                  <span>Saturday</span><span>11am–5pm</span>
+                </li>
+                <li
+                  class="flex justify-between border-b border-outline/10 pb-2"
+                >
+                  <span>Sunday</span><span>Closed</span>
+                </li>
+                <li
+                  class="flex justify-between border-b border-outline/10 pb-2"
+                >
+                  <span>Monday</span><span>11am–8pm</span>
+                </li>
+                <li
+                  class="flex justify-between border-b border-outline/10 pb-2"
+                >
+                  <span>Tuesday</span><span>11am–8pm</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Wednesday</span><span>11am–8pm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reviews Section -->
+      <section class="py-24 px-8 bg-surface-container-low" id="reviews">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12"
+          >
+            <div>
+              <span
+                class="font-label text-xs uppercase tracking-[0.2em] text-primary font-semibold block mb-4"
+                >Community Love</span
+              >
+              <h2 class="font-headline text-4xl md:text-6xl leading-tight">
+                What Customers Say
+              </h2>
+            </div>
+            <div class="bg-[#050505] text-[#FBFAEE] px-8 py-5 min-w-[280px]">
+              <p class="font-headline text-5xl leading-none">
+                5.0
+                <span class="text-[#f3c13a] text-2xl align-middle">★★★★★</span>
+              </p>
+              <p
+                class="font-label text-xs tracking-[0.2em] uppercase text-[#EFEEE3]/80 mt-2"
+              >
+                Google Reviews
+              </p>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden">
+            <div
+              id="reviews-track"
+              class="flex gap-6 w-max animate-reviews-marquee pb-2"
+            >
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Alma Herrera-Pazmiño
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">★★★★★</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  “Great setup and excellent service. Menu is focused,
+                  customizable, and the katsu was delicious.”
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google • 2 months ago
+                </p>
+              </article>
+
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Michael R.
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">★★★★★</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  “Fast service, crispy crust, and bold flavor. One of my
+                  favorite Japanese comfort spots in Manhattan.”
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google • 1 month ago
+                </p>
+              </article>
+
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Sofia T.
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">★★★★★</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  “The menu is simple and everything tastes intentional. The
+                  curry is rich and the katsu stays crunchy.”
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google • 4 weeks ago
+                </p>
+              </article>
+
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Derek L.
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">★★★★★</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  “Super clean place, friendly team, and consistent quality
+                  every visit. Perfect lunch stop downtown.”
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google • 3 weeks ago
+                </p>
+              </article>
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Alma Herrera-PazmiÃ±o
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">â˜…â˜…â˜…â˜…â˜…</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  â€œGreat setup and excellent service. Menu is focused,
+                  customizable, and the katsu was delicious.â€
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google â€¢ 2 months ago
+                </p>
+              </article>
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Michael R.
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">â˜…â˜…â˜…â˜…â˜…</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  â€œFast service, crispy crust, and bold flavor. One of my
+                  favorite Japanese comfort spots in Manhattan.â€
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google â€¢ 1 month ago
+                </p>
+              </article>
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Sofia T.
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">â˜…â˜…â˜…â˜…â˜…</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  â€œThe menu is simple and everything tastes intentional. The
+                  curry is rich and the katsu stays crunchy.â€
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google â€¢ 4 weeks ago
+                </p>
+              </article>
+              <article
+                class="w-[330px] md:w-[420px] border border-outline/20 bg-surface p-8"
+              >
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-3xl font-semibold tracking-tight">
+                    Derek L.
+                  </h3>
+                  <span class="text-[#8a6a00] text-lg">â˜…â˜…â˜…â˜…â˜…</span>
+                </div>
+                <p
+                  class="font-body text-2xl leading-relaxed text-on-surface/80 mb-8"
+                >
+                  â€œSuper clean place, friendly team, and consistent quality
+                  every visit. Perfect lunch stop downtown.â€
+                </p>
+                <p
+                  class="font-label text-sm uppercase tracking-[0.15em] text-on-surface/50"
+                >
+                  Google â€¢ 3 weeks ago
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-[#1A1A1A] text-[#EFEEE3]/60 w-full py-24 px-8">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16"
+      >
+        <div class="flex flex-col gap-8 max-w-sm">
+          <div
+            class="font-['Noto_Serif'] text-3xl text-[#FBFAEE] tracking-widest"
+          >
+            KATSU KATSU
+          </div>
+          <p class="font-body text-sm leading-relaxed">
+            Bringing the disciplined warmth of Japanese soul food to the
+            fast-paced energy of Downtown Manhattan.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-16 md:gap-24 font-['Inter'] font-light tracking-widest text-[10px] uppercase leading-relaxed"
+        >
+          <div class="flex flex-col gap-6">
+            <span class="text-[#B35C44] font-semibold"
+              >Location &amp; Contact</span
+            >
+            <address class="not-italic flex flex-col gap-2">
+              <span class="text-[#FBFAEE]">Katsu Katsu, New York, NY</span>
+              <a
+                class="hover:text-[#B35C44] transition-colors duration-300"
+                href="mailto:hello@katsukatsu.nyc"
+                >hello@katsukatsu.nyc</a
+              >
+              <span class="hover:text-[#B35C44] transition-colors duration-300"
+                >(646) 370-4036</span
+              >
+            </address>
+          </div>
+          <div class="flex flex-col gap-6">
+            <span class="text-[#B35C44] font-semibold">Connect</span>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a
+                  class="hover:text-[#B35C44] transition-colors duration-300"
+                  href="https://www.instagram.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >INSTAGRAM</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-[#B35C44] transition-colors duration-300"
+                  href="mailto:hello@katsukatsu.nyc"
+                  >EMAIL</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto mt-24 pt-8 border-t border-[#88726D]/20 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] tracking-[0.3em] font-label uppercase"
+      >
+        <span>© 2026 KATSU KATSU NYC. MADE WITH KOKORO.</span>
+        <div class="flex gap-8">
+          <a class="hover:text-[#FBFAEE]" href="privacy-policy.html"
+            >Privacy Policy</a
+          >
+          <a class="hover:text-[#FBFAEE]" href="accessibility.html"
+            >Accessibility</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () =>
+            mobileMenu.classList.add("hidden"),
+          );
+        });
+      }
+
+      const sectionOrder = ["home", "philosophy", "menu", "location"];
+      const desktopNavLinks = Array.from(
+        document.querySelectorAll('nav .md\\:flex a[href^="#"]'),
+      );
+      const mobileNavLinks = Array.from(
+        document.querySelectorAll('#mobile-menu a[href^="#"]'),
+      );
+      const headerNavLinks = [...desktopNavLinks, ...mobileNavLinks];
+
+      const scrollToSection = (sectionId) => {
+        const targetSection = document.getElementById(sectionId);
+        const navElement = document.querySelector("nav");
+        if (!targetSection) return;
+
+        const navHeight = navElement ? navElement.offsetHeight : 0;
+        const targetTop =
+          targetSection.getBoundingClientRect().top +
+          window.scrollY -
+          navHeight -
+          16;
+
+        window.scrollTo({
+          top: Math.max(0, targetTop),
+          behavior: "smooth",
+        });
+      };
+
+      headerNavLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const targetId = (link.getAttribute("href") || "").replace("#", "");
+          if (!targetId) return;
+
+          event.preventDefault();
+          scrollToSection(targetId);
+
+          if (mobileMenu) {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      });
+
+      const setDesktopNavActive = (link, isActive) => {
+        link.classList.remove(
+          "text-[#94442E]",
+          "dark:text-[#B35C44]",
+          "border-b-2",
+          "border-[#94442E]",
+          "pb-1",
+          "text-[#1B1C15]",
+          "dark:text-[#EFEEE3]",
+          "opacity-70",
+        );
+
+        if (isActive) {
+          link.classList.add(
+            "text-[#94442E]",
+            "dark:text-[#B35C44]",
+            "border-b-2",
+            "border-[#94442E]",
+            "pb-1",
+          );
+        } else {
+          link.classList.add(
+            "text-[#1B1C15]",
+            "dark:text-[#EFEEE3]",
+            "opacity-70",
+          );
+        }
+      };
+
+      const setMobileNavActive = (link, isActive) => {
+        link.classList.remove(
+          "text-primary",
+          "font-semibold",
+          "text-[#1B1C15]",
+        );
+        if (isActive) {
+          link.classList.add("text-primary", "font-semibold");
+        } else {
+          link.classList.add("text-[#1B1C15]");
+        }
+      };
+
+      const updateActiveNav = () => {
+        const scrollPosition = window.scrollY + 140;
+        let activeSectionId = sectionOrder[0];
+
+        sectionOrder.forEach((sectionId) => {
+          const section = document.getElementById(sectionId);
+          if (section && section.offsetTop <= scrollPosition) {
+            activeSectionId = sectionId;
+          }
+        });
+
+        desktopNavLinks.forEach((link) => {
+          const linkTarget = (link.getAttribute("href") || "").replace("#", "");
+          setDesktopNavActive(link, linkTarget === activeSectionId);
+        });
+
+        mobileNavLinks.forEach((link) => {
+          const linkTarget = (link.getAttribute("href") || "").replace("#", "");
+          setMobileNavActive(link, linkTarget === activeSectionId);
+        });
+      };
+
+      window.addEventListener("scroll", updateActiveNav, { passive: true });
+      window.addEventListener("resize", updateActiveNav);
+      updateActiveNav();
+
+      const reviewsTrack = document.getElementById("reviews-track");
+
+      if (reviewsTrack) {
+        const reviews = [
+          {
+            name: "Alma Herrera-Pazmino",
+            quote:
+              "Great setup and excellent service. Menu is focused, customizable, and the katsu was delicious.",
+            meta: "Google • 2 months ago",
+          },
+          {
+            name: "Michael R.",
+            quote:
+              "Fast service, crispy crust, and bold flavor. One of my favorite Japanese comfort spots in Manhattan.",
+            meta: "Google • 1 month ago",
+          },
+          {
+            name: "Sofia T.",
+            quote:
+              "The menu is simple and everything tastes intentional. The curry is rich and the katsu stays crunchy.",
+            meta: "Google • 4 weeks ago",
+          },
+          {
+            name: "Derek L.",
+            quote:
+              "Super clean place, friendly team, and consistent quality every visit. Perfect lunch stop downtown.",
+            meta: "Google • 3 weeks ago",
+          },
+        ];
+
+        reviewsTrack.innerHTML = [...reviews, ...reviews]
+          .map(
+            (review) => `
+              <article class="w-[280px] md:w-[340px] border border-outline/20 bg-surface p-6 md:p-7">
+                <div class="flex items-center justify-between mb-6">
+                  <h3 class="font-body text-xl md:text-2xl font-semibold tracking-tight">${review.name}</h3>
+                  <span class="text-[#8a6a00] text-base">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p class="font-body text-lg md:text-xl leading-relaxed text-on-surface/80 mb-6">"${review.quote}"</p>
+                <p class="font-label text-[11px] uppercase tracking-[0.15em] text-on-surface/50">${review.meta}</p>
+              </article>`,
+          )
+          .join("");
+      }
+
+      const reviewsRating = document.querySelector(
+        "#reviews .text-2xl.align-middle",
+      );
+
+      if (reviewsRating) {
+        reviewsRating.innerHTML = "&#9733;&#9733;&#9733;&#9733;&#9733;";
+      }
+
+      const menuTrack = document.getElementById("menu-track");
+      const menuPrevBottom = document.getElementById("menu-prev-bottom");
+      const menuNextBottom = document.getElementById("menu-next-bottom");
+      const menuCarousel = document.getElementById("menu-carousel");
+
+      if (menuTrack && menuCarousel) {
+        const slides = Array.from(menuTrack.children);
+        let index = 0;
+        let autoPlayTimer;
+        let pointerStartX = 0;
+        let pointerActive = false;
+
+        const getPerView = () => {
+          if (window.innerWidth >= 1024) return 4;
+          if (window.innerWidth >= 640) return 2;
+          return 1;
+        };
+
+        const getSlideStep = () => {
+          if (slides.length < 2) {
+            return (
+              slides[0]?.getBoundingClientRect().width ||
+              menuCarousel.clientWidth
+            );
+          }
+
+          return slides[1].offsetLeft - slides[0].offsetLeft;
+        };
+
+        const updateCarousel = () => {
+          const perView = getPerView();
+          const maxIndex = Math.max(0, slides.length - perView);
+          index = Math.max(0, Math.min(index, maxIndex));
+          menuTrack.style.transform = `translateX(-${index * getSlideStep()}px)`;
+          if (menuPrevBottom) menuPrevBottom.disabled = index === 0;
+          if (menuNextBottom) menuNextBottom.disabled = index === maxIndex;
+        };
+
+        const startAutoPlay = () => {
+          clearInterval(autoPlayTimer);
+          autoPlayTimer = setInterval(() => {
+            const perView = getPerView();
+            const maxIndex = Math.max(0, slides.length - perView);
+            if (maxIndex === 0) return;
+            index = index >= maxIndex ? 0 : index + 1;
+            updateCarousel();
+          }, 4200);
+        };
+
+        const stopAutoPlay = () => {
+          clearInterval(autoPlayTimer);
+        };
+
+        if (menuPrevBottom) {
+          menuPrevBottom.addEventListener("click", () => {
+            index -= 1;
+            updateCarousel();
+          });
+        }
+
+        if (menuNextBottom) {
+          menuNextBottom.addEventListener("click", () => {
+            index += 1;
+            updateCarousel();
+          });
+        }
+
+        menuCarousel.addEventListener("mouseenter", stopAutoPlay);
+        menuCarousel.addEventListener("mouseleave", startAutoPlay);
+        const handleSwipe = (deltaX) => {
+          if (Math.abs(deltaX) <= 40) return;
+          index += deltaX < 0 ? 1 : -1;
+          updateCarousel();
+        };
+
+        menuCarousel.addEventListener("dragstart", (event) => {
+          event.preventDefault();
+        });
+
+        menuCarousel.addEventListener("pointerdown", (event) => {
+          if (event.pointerType === "mouse" && event.button !== 0) return;
+          pointerStartX = event.clientX;
+          pointerActive = true;
+          stopAutoPlay();
+          if (menuCarousel.setPointerCapture) {
+            menuCarousel.setPointerCapture(event.pointerId);
+          }
+        });
+
+        menuCarousel.addEventListener("pointerup", (event) => {
+          if (!pointerActive) return;
+          handleSwipe(event.clientX - pointerStartX);
+          pointerActive = false;
+          startAutoPlay();
+        });
+
+        menuCarousel.addEventListener("pointercancel", () => {
+          pointerActive = false;
+          startAutoPlay();
+        });
+
+        menuCarousel.addEventListener("mouseleave", () => {
+          if (!pointerActive) {
+            startAutoPlay();
+          }
+        });
+        window.addEventListener("resize", () => {
+          updateCarousel();
+          startAutoPlay();
+        });
+        updateCarousel();
+        startAutoPlay();
+      }
+    </script>
+  </body>
+</html>
